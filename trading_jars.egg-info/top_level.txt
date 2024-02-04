@@ -1,1 +1,1 @@
-trading_jars
+trading-jars
