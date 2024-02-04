@@ -460,34 +460,36 @@ def main():
 #
 # Invoke main
 
-#validate if java is installed
-javaInstalled = True
-mavenInstalled = True
-if not shutil.which("java"):
-    print("Java is not installed. Install Java and ensure java 'bin' folder is added to system path configuration")
-    print("Steps to check if java is installed")
-    print("  - Open Command window or shell ")
-    print("  - Type Command 'java -version'")
-    print("This should show the installed java version")
-    javaInstalled=False
+def initiate():
 
-if not shutil.which("mvn"):
-    print("Apache Maven is not installed. Install it from https://maven.apache.org/download.cgi and ensure maven 'bin' folder is added to system path configuration")
-    print("Steps to check if java is installed")
-    print("  - Open Command window or shell ")
-    print("  - Type Command 'mvn --version'")
-    print("This should show the installed maven version")
-    mavenInstalled=False
+    #validate if java is installed
+    javaInstalled = True
+    mavenInstalled = True
+    if not shutil.which("java"):
+        print("Java is not installed. Install Java and ensure java 'bin' folder is added to system path configuration")
+        print("Steps to check if java is installed")
+        print("  - Open Command window or shell ")
+        print("  - Type Command 'java -version'")
+        print("This should show the installed java version")
+        javaInstalled=False
 
-if javaInstalled & mavenInstalled :
-    pass
-else:
-    print("")
-    print("E X C E P T I O N")
-    print("")
-    print("Pre-requisite software not installed! Install & Validate missing software before re-running this utility!!")
-    abend()
+    if not shutil.which("mvn"):
+        print("Apache Maven is not installed. Install it from https://maven.apache.org/download.cgi and ensure maven 'bin' folder is added to system path configuration")
+        print("Steps to check if java is installed")
+        print("  - Open Command window or shell ")
+        print("  - Type Command 'mvn --version'")
+        print("This should show the installed maven version")
+        mavenInstalled=False
 
-main()
+    if javaInstalled & mavenInstalled :
+        pass
+    else:
+        print("")
+        print("E X C E P T I O N")
+        print("")
+        print("Pre-requisite software not installed! Install & Validate missing software before re-running this utility!!")
+        abend()
 
-input("Processing Successful, Press Enter to close Console")
+    main()
+
+    input("Processing Successful, Press Enter to close Console")
