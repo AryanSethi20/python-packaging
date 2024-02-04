@@ -1,0 +1,14 @@
+REQUIREMENTS:
+
+---> I want to distribute a python program as a package.. end-users can simply deploy it on their system.. It should be kind of self-installable or jar type
+---> Cross platform compatibility: should work on windows/linux/etc.
+---> Assume users have no knwoledge about python and they just want to use it with an installer
+
+
+Already tried attempts:
+---> Already used pyinstaller to build an exe file, but it worked on windows and not on unix/linux systems.
+
+
+MAIN GOAL:
+===> MAJORITY AIM IS TO THINK OF A COMMON SOLUTION TO DISTRIBUTE THE PACKAGE ACROSS DIFFERENT PLATFORMS
+
