@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='trading-jars',
+    name='trading_jars',
     version='1.0.0',
     author='Varsha Balaji, Aryan Sethi',
     author_email='varshabalaji3@gmail.com, aryansethi20@gmail.com',
@@ -20,7 +20,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'download-trading-jars=downloadTradingAppJars.py:initiate',
+            'download-trading-jars=trading_jars.downloadTradingAppJars:initiate',
         ],
     },
 )

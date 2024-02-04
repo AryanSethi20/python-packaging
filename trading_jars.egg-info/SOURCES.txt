@@ -1,7 +1,7 @@
 README.md
 setup.py
-trading-jars/__init__.py
-trading-jars/downloadTradingAppJars.py
+trading_jars/__init__.py
+trading_jars/downloadTradingAppJars.py
 trading_jars.egg-info/PKG-INFO
 trading_jars.egg-info/SOURCES.txt
 trading_jars.egg-info/dependency_links.txt
