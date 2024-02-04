@@ -1,0 +1,2 @@
+[console_scripts]
+download-trading-jars = downloadTradingAppJars.py:initiate

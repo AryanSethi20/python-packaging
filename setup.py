@@ -2,13 +2,7 @@ from setuptools import find_packages, setup
 
 setup(
     name='trading-jars',
-    version='0.1.3',
-    py_modules=['trading-jars'],
-)
-
-setup(
-    name='trading-jars',
-    version='0.2.0',
+    version='1.0.0',
     author='Varsha Balaji, Aryan Sethi',
     author_email='varshabalaji3@gmail.com, aryansethi20@gmail.com',
     description='File to download trading app jars',
